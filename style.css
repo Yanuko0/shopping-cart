@@ -377,7 +377,7 @@ header .totalQuantity{
     .checkoutLayout .returnCart .list .returnPrice {
         text-align: right;
         /* 靠右對齊 */
-        padding-right: 60px;
+        padding-right: 70px;
         /* 根據你的需求設定右邊的內邊距 */
         box-sizing: border-box;
         /* 確保內邊距不會使元素超出格子 */
