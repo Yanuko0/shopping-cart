@@ -373,6 +373,18 @@ header .totalQuantity{
         font-size: small;
     
     }
+
+    .checkoutLayout .returnCart .list .returnPrice {
+        text-align: right;
+        /* 靠右對齊 */
+        padding-right: 50px;
+        /* 根據你的需求設定右邊的內邊距 */
+        box-sizing: border-box;
+        /* 確保內邊距不會使元素超出格子 */
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
     
  
     
