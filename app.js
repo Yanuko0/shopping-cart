@@ -34,6 +34,21 @@ close.addEventListener('click', toggleCart);
 //     container.style.transform = 'translateX(0)';
 // });
 
+//讓訂購黃色區域也可以跳轉到訂購頁面
+document.addEventListener('DOMContentLoaded', function () {
+    // 其他初始化操作...
+
+    // 將點擊 .checkout 區域的事件綁定添加到 .cart .buttons
+    document.querySelector('.cart .buttons').addEventListener('click', function (event) {
+        // 檢查點擊的元素是否是 .checkout 或其子元素
+        if (event.target.closest('.checkout')) {
+            // 如果是，執行跳轉頁面的操作
+            window.location.href = 'checkout.html';
+        }
+    });
+
+    // 其他初始化操作...
+});
 
 
 // 宣告一個變數來存儲商品數據
