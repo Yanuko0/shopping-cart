@@ -360,6 +360,10 @@ header .totalQuantity{
     .listProduct .item button{
         top: 30%;
     }
+
+     .checkoutLayout{
+        display: block;
+    }
  
     
     
