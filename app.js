@@ -119,6 +119,10 @@ function addCart($idProduct) {
     // 將購物車資料存入 cookie
     document.cookie = "listCart=" + JSON.stringify(listCart) + "; expires=Thu, 31 Dec 2025 23:59:59 UTC; path=/";
 
+    // 將購物車資料存入 localStorage
+    localStorage.setItem('listCart', JSON.stringify(listCart));
+
+
     // 更新購物車顯示
     addCartToHTML();
 }
@@ -189,4 +193,6 @@ function changeQuantity($idProduct, $type) {
     // 重新載入 HTML 顯示購物車
     addCartToHTML();
 }
+
+
 
