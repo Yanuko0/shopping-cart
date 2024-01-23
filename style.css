@@ -361,9 +361,23 @@ header .totalQuantity{
         top: 30%;
     }
 
-/*      .checkoutLayout{
+     .checkoutLayout{
         display: block;
-    } */
+    }
+
+    .returnCart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .returnCart .list {
+        order: 2; /* 改變順序 */
+    }
+
+    .returnCart .right {
+        order: 1; /* 改變順序 */
+    }
  
     
     
