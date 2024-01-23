@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    // 檢查是否有購物車的 localStorage 資料
+    var storedCart = localStorage.getItem('listCart');
+
+    if (storedCart) {
+        // 解析並賦值給 listCart
+        listCart = JSON.parse(storedCart);
+    }
+
+    // 將購物車資料顯示在 HTML 中
+    addCartToHTML();
+});
+    </script>
+    
+
+    
 </head>
 <body>
     
