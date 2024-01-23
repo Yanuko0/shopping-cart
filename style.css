@@ -365,19 +365,15 @@ header .totalQuantity{
         display: block;
     }
 
-    .returnCart {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .checkoutLayout .returnCart .list .name{
+        height: 80px;
+        width: 65px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: small;
+    
     }
-
-    .returnCart .list {
-        order: 2; /* 改變順序 */
-    }
-
-    .returnCart .right {
-        order: 1; /* 改變順序 */
-    }
+    
  
     
     
