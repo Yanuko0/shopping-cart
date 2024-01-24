@@ -4,6 +4,8 @@ let cart = document.querySelector('.cart');
 let container = document.querySelector('.container');
 let close = document.querySelector('.close');
 
+
+
 // 切換購物車的顯示與隱藏
 function toggleCart() {
     if (cart.style.right == '-100%') {
@@ -18,6 +20,8 @@ function toggleCart() {
 // 添加點擊事件監聽器
 iconCart.addEventListener('click', toggleCart);
 close.addEventListener('click', toggleCart);
+
+
 
 
 // iconCart.addEventListener('click', function(){
@@ -49,7 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 其他初始化操作...
 });
-
 
 // 宣告一個變數來存儲商品數據
 let products = null;
@@ -134,9 +137,8 @@ function addCart($idProduct) {
     // 將購物車資料存入 cookie
     document.cookie = "listCart=" + JSON.stringify(listCart) + "; expires=Thu, 31 Dec 2025 23:59:59 UTC; path=/";
 
-    // 將購物車資料存入 localStorage
-    localStorage.setItem('listCart', JSON.stringify(listCart));
-
+    //  // 將購物車資料存入 localStorage
+     localStorage.setItem('listCart', JSON.stringify(listCart));
 
     // 更新購物車顯示
     addCartToHTML();
@@ -205,9 +207,12 @@ function changeQuantity($idProduct, $type) {
     // 將新的購物車資料存入 cookie
     document.cookie = "listCart=" + JSON.stringify(listCart) + "; expires=Thu, 31 Dec 2025 23:59:59 UTC; path=/";
 
-    // 重新載入 HTML 顯示購物車
-    addCartToHTML();
+    // 將新的購物車資料存入 localStorage
+    localStorage.setItem('listCart', JSON.stringify(listCart));
+
+     // 更新購物車顯示
+     addCartToHTML();
+     // 更新商品列表顯示
+     addDataToHTML();
 }
-
-
 
